@@ -43,7 +43,7 @@ def get_or_create_velicina(broj):
 def dodaj_artikl():
     data = request.get_json()
     try:
-        # Pronađi prvu kategoriju da izbjegnemo error stranog ključa
+        
         kat = Kategorije.query.first()
         kat_id = kat.id if kat else 1
 
